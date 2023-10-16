@@ -1,0 +1,26 @@
+
+def temp_cat(temp):
+    if temp < -20:
+        return 0
+    elif temp < 0:
+        return 1
+    elif temp < 15:
+        return 2
+    elif temp < 25:
+        return 3
+    else:
+        return 4
+
+temp = -30
+result = temp_cat(temp)
+print(result)  # Ответ: 0
+
+temp = 10
+result = temp_cat(temp)
+print(result)  # Ответ: 2
+
+temp = 30
+result = temp_cat(temp)
+print(result)  # Ответ: 4
+
+

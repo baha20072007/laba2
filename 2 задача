@@ -1,0 +1,10 @@
+
+def del_rep(num):
+    return sorted(set(num))
+
+num = [1, 2, 1, 2, 3, 1, 2, 3, 4]
+result = del_rep(num)
+print(result)  # Ответ: [1, 2, 3, 4]
+
+
+    
