@@ -1,0 +1,12 @@
+n = int(input())
+sum = 0
+
+for i in range(11, n+1):
+    square = i**2
+    square_last_digit = square % 10
+    
+    if square_last_digit in [2, 5, 8]:
+        sum += i
+
+print(sum)
+

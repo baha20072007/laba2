@@ -1,0 +1,25 @@
+
+import math
+
+def check_brackets(sentence):
+    stack = []
+    
+    for char in sentence:
+        if char == '(':
+            stack.append(char)
+        elif char == ')':
+            if len(stack) == 0:
+                return "Количество открывающихся и закрывающихся скобок несовпадает"
+            else:
+                stack.pop()
+    
+    if len(stack) ==  0:
+        return "Количество открывающихся и закрывающихся скобок совпадает"
+    else:
+        return "Количество открывающихся и закрывающихся скобок несовпадает"
+
+
+sentence = 'abs(math.sin(pow((5*a - b), 3)))'
+result = check_brackets(sentence)
+print(result)
+

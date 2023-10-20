@@ -1,0 +1,21 @@
+
+# Ввод трех чисел
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+
+# Сортировка чисел в порядке возрастания
+if num1 > num2:
+    num1, num2 = num2, num1
+if num2 > num3:
+    num2, num3 = num3, num2
+if num1 > num2:
+    num1, num2 = num2, num1
+
+# Вывод среднего числа
+middle_num = num2
+print(middle_num)
+
+
+
+
